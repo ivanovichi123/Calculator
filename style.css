@@ -1,3 +1,55 @@
+body {
+    margin: 0;
+    background-color: aquamarine;
+}
+
 h1 {
     text-align: center;
+}
+
+.display {
+    background-color: azure;
+    height: 50px;
+    width: 700px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+#buttons {
+    background-color: blue;
+    width: 700px;
+    height: 1000px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    margin: 0;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero {
+    width: 80px;
+    height: 80px;
+}
+
+.add, .minus, .multiply, .divide, .clear, .equal {
+    width: 50px;
+    height: 50px;
+}
+
+.numbers {
+    background-color: black;
+    /* max-width: 300px; */
 }
