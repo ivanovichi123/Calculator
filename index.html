@@ -10,7 +10,11 @@
 <body>
     <h1>My awesome calculator!!!!</h1>
     <div class="flex">
-        <div class = "display">1 + 2</div>
+        <div class = "display">
+            <div id="oneNumber">1</div>             
+            <div id="symbol">+</div> 
+            <div id="twoNumber">2</div> 
+        </div>
     </div>
     <div class="container">
         <div id="buttons">
@@ -25,13 +29,17 @@
                 <button class="eight">8</button>
                 <button class="nine">9</button>
                 <button class="zero">0</button>
+                <button class="equal">Equal</button>
             </div>
-            <button class="add">add</button>
-            <button class="minus">minus</button>
-            <button class="multiply">multiply</button>
-            <button class="divide">divide</button>
-            <button class="clear">clear</button>
-            <button class="equal">equal</button>
+            <div class="special">
+                <button class="clear">Clear</button>
+                <button class="add">Add</button>
+                <button class="minus">Minus</button>
+                <button class="multiply">Multiply</button>
+                <button class="divide">Divide</button>
+
+                
+            </div>
         </div>
     </div>
 </body>

@@ -30,7 +30,11 @@ const div = function divide(a, b) {
     console.log(op4);
 }
 
-
+const one = document.querySelector(".one");
+one.addEventListener("click", () => {
+    
+    alert("Boba Laura");  
+})
 
 
 add(1, 2);
