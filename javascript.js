@@ -280,9 +280,24 @@ function igual() {
     let numero1 = Number(primerNumero);
     let numero2 = Number(segundoNumero);
     operation(numero1, numero2, operador);
-    operador = "+";
-    operator.textContent = "+";
-    secondNumber.textContent = "";
+    if (operador === "+") {
+        operador = "+";
+        operator.textContent = "+";
+        secondNumber.textContent = "";
+    } else if (operador === "-"){
+        operador = "-";
+        operator.textContent = "-";
+        secondNumber.textContent = "";
+    } else if (operador === "*") {
+        operador = "*";
+        operator.textContent = "*";
+        secondNumber.textContent = "";
+    } else {
+        operador = "/";
+        operator.textContent = "/";
+        secondNumber.textContent = "";
+    }
+
 }
 
 const plus = document.querySelector(".add");
@@ -297,19 +312,31 @@ plus.addEventListener("click", () => {
 
 const min = document.querySelector(".minus");
 min.addEventListener("click", () => {
-    operator.textContent = "-";
-    operador = "-";
+    if (operador === "-" && secondNumber.textContent !== "") {
+        igual();
+    } else {
+        operator.textContent = "-";
+        operador = "-";
+    }
 })
 
 const multiplicar = document.querySelector(".multiply");
 multiplicar.addEventListener("click", () => {
-    operator.textContent = "*";
-    operador = "*";
+    if (operador === "*" && secondNumber.textContent !== "") {
+        igual();
+    } else {
+        operator.textContent = "*";
+        operador = "*";
+    }
 })
 
 const dividir = document.querySelector(".divide");
 dividir.addEventListener("click", () => {
-    operator.textContent = "/";
-    operador = "/";
+    if (operador === "/" && secondNumber.textContent !== "") {
+        igual();
+    } else {
+        operator.textContent = "/";
+        operador = "/";
+    }
 })
 
